@@ -29,3 +29,21 @@ function appendKitten(name)
   var safeKitten = [...kittens, name];
   return(safeKitten);
 }
+
+function prependKitten(name)
+{
+  var safeKitten = [name,...kittens];
+  return(safeKitten);
+}
+
+function removeLastKitten()
+{
+  var safeKitten = kittens.slice(0, kittens.length -1);
+  return(safeKitten);
+}
+
+function removeFirstKitten()
+{
+  var safeKitten = kittens.slice(1);
+  return(safeKitten);
+}
